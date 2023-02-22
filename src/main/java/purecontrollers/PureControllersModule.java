@@ -44,6 +44,6 @@ public class PureControllersModule extends AbstractModule {
      * @return 
      */
     protected <T> Command<T> provideCommand(final Class<? extends Command<T>> CommandClass) {
-        return new CommandProvider<T>(getProvider(CommandClass));
+        return new CommandProvider<>(getProvider(CommandClass));
     }
 }
